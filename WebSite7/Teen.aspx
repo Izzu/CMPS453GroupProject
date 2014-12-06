@@ -16,7 +16,7 @@
 </asp:Content>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <h2>Jobs:</h2>
+    <h1>Jobs:</h1>
 
     <script language="JavaScript">
 
@@ -37,13 +37,15 @@
             var edureq = Job.getElementsByTagName("edu_req");
 
             document.write("<li class='zero'>");
-            document.write("<h3>" + Name[0].textContent.toString() + "</h3>");
+            document.write("<h2>" + Name[0].textContent.toString() + "</h2>");
             document.write(summary[0].textContent.toString());
             document.write("<br/>");
+            document.write("<h4>" + "Demand" + "</h4>");
             document.write(ntnlsupplydemand[0].textContent.toString());
             document.write("<br/>");
+            document.write("<h4>" + "Education Requirements" + "</h4>");
             document.write(edureq[0].textContent.toString());
-            document.write("</li>");
+            document.write("<br/>" + "<br/>" + "<br/>" + "</li>");
         }
         document.write("</ol>");
 </script>
